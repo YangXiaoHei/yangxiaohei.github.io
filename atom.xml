@@ -32,48 +32,4 @@
     
   </entry>
   
-  <entry>
-    <title>hahaa</title>
-    <link href="http://yoursite.com/2017/10/15/hahaa/"/>
-    <id>http://yoursite.com/2017/10/15/hahaa/</id>
-    <published>2017-10-14T16:45:22.000Z</published>
-    <updated>2017-10-14T17:07:22.000Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="iOS" scheme="http://yoursite.com/categories/iOS/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>text2</title>
-    <link href="http://yoursite.com/2017/10/15/text2/"/>
-    <id>http://yoursite.com/2017/10/15/text2/</id>
-    <published>2017-10-14T16:25:05.000Z</published>
-    <updated>2017-10-14T16:46:57.000Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>hello world</title>
-    <link href="http://yoursite.com/2017/10/14/hello-world/"/>
-    <id>http://yoursite.com/2017/10/14/hello-world/</id>
-    <published>2017-10-14T15:58:21.000Z</published>
-    <updated>2017-10-14T16:46:59.000Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
 </feed>
