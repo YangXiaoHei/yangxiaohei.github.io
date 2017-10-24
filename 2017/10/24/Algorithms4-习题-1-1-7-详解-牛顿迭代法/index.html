@@ -142,9 +142,9 @@
 <meta property="og:image" content="http://oy5xsz86v.bkt.clouddn.com/%E7%89%9B%E9%A1%BF%E8%BF%AD%E4%BB%A3%E9%80%92%E6%8E%A8%E5%BC%8F.png">
 <meta property="og:image" content="http://oy5xsz86v.bkt.clouddn.com/%E5%B9%B3%E6%96%B9%E6%A0%B9%E8%BF%AD%E4%BB%A3%E9%80%92%E6%8E%A8%E5%BC%8F.png">
 <meta property="og:image" content="http://oy5xsz86v.bkt.clouddn.com/2%E5%BC%80%E6%A0%B9.png">
-<meta property="og:image" content="http://oy5xsz86v.bkt.clouddn.com/%E5%BE%AA%E7%8E%AF%E7%BB%88%E6%AD%A2%E6%9D%A1%E4%BB%B6.png">
-<meta property="og:image" content="http://oy5xsz86v.bkt.clouddn.com/%E8%B6%8B%E7%B4%A7%E7%BA%A6%E5%88%86.png">
-<meta property="og:updated_time" content="2017-10-24T07:02:02.000Z">
+<meta property="og:image" content="http://oy5xsz86v.bkt.clouddn.com/whilefinalcondition.png">
+<meta property="og:image" content="http://oy5xsz86v.bkt.clouddn.com/%E6%95%B4%E7%90%86%E5%BE%AA%E7%8E%AF%E7%BB%88%E6%AD%A2%E6%9D%A1%E4%BB%B6.png">
+<meta property="og:updated_time" content="2017-10-24T07:13:28.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Algorithms4 习题 1_1_7 详解-牛顿迭代法">
 <meta name="twitter:description" content="描述 : 下面代码输出什么 ? 123456public static double practise_1_1_07_a(double c) &amp;#123;	double result = c;	while(Math.abs(result - c / result) &amp;gt; .0001) 		result = (c / result + result) / 2.0;	return result;&amp;">
@@ -356,7 +356,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-10-24T15:02:02+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2017-10-24T15:13:28+08:00">
                 2017-10-24
               </time>
             
@@ -423,7 +423,10 @@
 <h2 id="牛顿迭代法递推式"><a href="#牛顿迭代法递推式" class="headerlink" title="牛顿迭代法递推式"></a>牛顿迭代法递推式</h2><p>可以发现，每次做切线与 <code>x</code> 轴交点在逼近 <code>f(x) = 0</code> 的解，据此我们可以得到下列递推式<br><img src="http://oy5xsz86v.bkt.clouddn.com/%E7%89%9B%E9%A1%BF%E8%BF%AD%E4%BB%A3%E9%80%92%E6%8E%A8%E5%BC%8F.png" alt=""></p>
 <p>而求 <code>a</code> 的<code>2</code>次方根，即求使 <code>x^2 - a</code> 为<code>0</code>的解，此时<code>f(x) = x^2 - a</code>，带入牛顿迭代递推式得到平方根迭代递推式<br><img src="http://oy5xsz86v.bkt.clouddn.com/%E5%B9%B3%E6%96%B9%E6%A0%B9%E8%BF%AD%E4%BB%A3%E9%80%92%E6%8E%A8%E5%BC%8F.png" alt=""></p>
 <p>举例来说，比如求 <code>2</code> 的<code>2</code>次方根，随意选取一个初始值 <code>x0 = 1</code><br><img src="http://oy5xsz86v.bkt.clouddn.com/2%E5%BC%80%E6%A0%B9.png" alt=""></p>
-<h2 id="重新解释-Java-代码"><a href="#重新解释-Java-代码" class="headerlink" title="重新解释 Java 代码"></a>重新解释 <code>Java</code> 代码</h2><p>我们可以随意选取 <code>x0</code> 的值，在上述 <code>Java</code> 程序中，选取 <code>x0 = a</code>，依然可以得到正确的结果。<br>我们知道，随着 <code>f(xn)/f&#39;(xn) -&gt; 0</code>时，<code>x(n+1) -&gt; x(n)</code>，所以我们使用的循环的终止条件其实是<br><img src="http://oy5xsz86v.bkt.clouddn.com/%E5%BE%AA%E7%8E%AF%E7%BB%88%E6%AD%A2%E6%9D%A1%E4%BB%B6.png" alt=""><br>整理后得到<br><img src="http://oy5xsz86v.bkt.clouddn.com/%E8%B6%8B%E7%B4%A7%E7%BA%A6%E5%88%86.png" alt=""></p>
+<h2 id="重新解释-Java-代码"><a href="#重新解释-Java-代码" class="headerlink" title="重新解释 Java 代码"></a>重新解释 <code>Java</code> 代码</h2><p>我们可以随意选取 <code>x0</code> 的值，在上述 <code>Java</code> 程序中，选取 <code>x0 = a</code>，依然可以得到正确的结果。<br>我们知道，随着 <code>f(xn)/f&#39;(xn) -&gt; 0</code>时，<code>x(n+1) -&gt; x(n)</code>，所以我们使用的循环的终止条件其实是</p>
+<p><img src="http://oy5xsz86v.bkt.clouddn.com/whilefinalcondition.png" alt=""></p>
+<p>整理后得到</p>
+<p><img src="http://oy5xsz86v.bkt.clouddn.com/%E6%95%B4%E7%90%86%E5%BE%AA%E7%8E%AF%E7%BB%88%E6%AD%A2%E6%9D%A1%E4%BB%B6.png" alt=""></p>
 <blockquote>
 <p>添加注释版代码</p>
 </blockquote>
