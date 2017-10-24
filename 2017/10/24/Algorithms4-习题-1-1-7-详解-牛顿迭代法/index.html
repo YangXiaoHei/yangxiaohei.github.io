@@ -131,16 +131,24 @@
 
 
 
-<meta name="description" content="iOS Dev">
-<meta property="og:type" content="website">
-<meta property="og:title" content="杨小嘿の博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="描述 : 下面代码输出什么 ? 123456public static double practise_1_1_07_a(double c) &amp;#123;	double result = c;	while(Math.abs(result - c / result) &amp;gt; .0001) 		result = (c / result + result) / 2.0;	return result;&amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Algorithms4 习题 1_1_7 详解-牛顿迭代法">
+<meta property="og:url" content="http://yoursite.com/2017/10/24/Algorithms4-习题-1-1-7-详解-牛顿迭代法/index.html">
 <meta property="og:site_name" content="杨小嘿の博客">
-<meta property="og:description" content="iOS Dev">
+<meta property="og:description" content="描述 : 下面代码输出什么 ? 123456public static double practise_1_1_07_a(double c) &amp;#123;	double result = c;	while(Math.abs(result - c / result) &amp;gt; .0001) 		result = (c / result + result) / 2.0;	return result;&amp;">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://oy5xsz86v.bkt.clouddn.com/%E7%89%9B%E9%A1%BF%E8%BF%AD%E4%BB%A3%E6%B3%95.gif">
+<meta property="og:image" content="http://oy5xsz86v.bkt.clouddn.com/%E7%89%9B%E9%A1%BF%E8%BF%AD%E4%BB%A3%E9%80%92%E6%8E%A8%E5%BC%8F.png">
+<meta property="og:image" content="http://oy5xsz86v.bkt.clouddn.com/%E5%B9%B3%E6%96%B9%E6%A0%B9%E8%BF%AD%E4%BB%A3%E9%80%92%E6%8E%A8%E5%BC%8F.png">
+<meta property="og:image" content="http://oy5xsz86v.bkt.clouddn.com/2%E5%BC%80%E6%A0%B9.png">
+<meta property="og:image" content="http://oy5xsz86v.bkt.clouddn.com/%E5%BE%AA%E7%8E%AF%E7%BB%88%E6%AD%A2%E6%9D%A1%E4%BB%B6.png">
+<meta property="og:image" content="http://oy5xsz86v.bkt.clouddn.com/%E8%B6%8B%E7%B4%A7%E7%BA%A6%E5%88%86.png">
+<meta property="og:updated_time" content="2017-10-24T06:59:54.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="杨小嘿の博客">
-<meta name="twitter:description" content="iOS Dev">
+<meta name="twitter:title" content="Algorithms4 习题 1_1_7 详解-牛顿迭代法">
+<meta name="twitter:description" content="描述 : 下面代码输出什么 ? 123456public static double practise_1_1_07_a(double c) &amp;#123;	double result = c;	while(Math.abs(result - c / result) &amp;gt; .0001) 		result = (c / result + result) / 2.0;	return result;&amp;">
+<meta name="twitter:image" content="http://oy5xsz86v.bkt.clouddn.com/%E7%89%9B%E9%A1%BF%E8%BF%AD%E4%BB%A3%E6%B3%95.gif">
 
 
 
@@ -170,13 +178,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/10/24/Algorithms4-习题-1-1-7-详解-牛顿迭代法/"/>
 
 
 
 
 
-  <title>杨小嘿の博客</title>
+  <title>Algorithms4 习题 1_1_7 详解-牛顿迭代法 | 杨小嘿の博客</title>
   
 
 
@@ -195,8 +203,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -289,9 +296,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -321,9 +328,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/24/Algorithms4-习题-1-1-7-详解-牛顿迭代法/" itemprop="url">Algorithms4 习题 1_1_7 详解-牛顿迭代法</a></h1>
+          <h1 class="post-title" itemprop="name headline">Algorithms4 习题 1_1_7 详解-牛顿迭代法</h1>
         
 
         <div class="post-meta">
@@ -385,9 +390,7 @@
       
 
       
-        
-          
-            <p><code>描述</code> : 下面代码输出什么 ?</p>
+        <p><code>描述</code> : 下面代码输出什么 ?</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">public static double practise_1_1_07_a(double c) &#123;</div><div class="line">	double result = c;</div><div class="line">	while(Math.abs(result - c / result) &gt; .0001) </div><div class="line">		result = (c / result + result) / 2.0;</div><div class="line">	return result;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>上面的代码输出 <code>c</code> 的平方根，原理是牛顿迭代法，下面详述：</p>
 <h2 id="牛顿迭代法执行步骤"><a href="#牛顿迭代法执行步骤" class="headerlink" title="牛顿迭代法执行步骤"></a>牛顿迭代法执行步骤</h2><p>牛顿迭代法是一种通过逐渐逼近求函数解的方法，如下动图所示<br><img src="http://oy5xsz86v.bkt.clouddn.com/%E7%89%9B%E9%A1%BF%E8%BF%AD%E4%BB%A3%E6%B3%95.gif" alt=""></p>
@@ -404,8 +407,6 @@
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">public static double practise_1_1_07_a(double c) &#123;</div><div class="line">	/**</div><div class="line">	 * 选取 x0 = c</div><div class="line">	 */</div><div class="line">	double result = c;</div><div class="line">	/**</div><div class="line">	 * 终止条件为 (x(n) - a/x(n)) -&gt; 0</div><div class="line">	 */</div><div class="line">	while(Math.abs(result - c / result) &gt; .0001) </div><div class="line">		// 迭代 x(n+1) = 1/2 * (x(n) - a/x(n))</div><div class="line">		result = (c / result + result) / 2.0;</div><div class="line">	return result;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
     
@@ -422,218 +423,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/21/Algorithms4-习题-1-1-27-详解/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="杨小嘿">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="杨小嘿の博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/21/Algorithms4-习题-1-1-27-详解/" itemprop="url">Algorithms4 习题 1_1_27 详解</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-21T15:58:03+08:00">
-                2017-10-21
-              </time>
+              <a href="/2017/10/21/Algorithms4-习题-1-1-27-详解/" rel="next" title="Algorithms4 习题 1_1_27 详解">
+                <i class="fa fa-chevron-left"></i> Algorithms4 习题 1_1_27 详解
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2017-10-22T03:45:58+08:00">
-                2017-10-22
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Algorithms4/" itemprop="url" rel="index">
-                    <span itemprop="name">Algorithms4</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p> 描述: <code>二项分布</code> 估计用以下代码计算 <code>binomial(100, 50, 0.25)</code> 将会产生的递归调用次数：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">binomial</span><span class="params">(<span class="keyword">int</span> N, <span class="keyword">int</span> k, <span class="keyword">double</span> p)</span> </span>&#123;</div><div class="line">    <span class="keyword">if</span> (N == <span class="number">0</span> &amp;&amp; k == <span class="number">0</span>) <span class="keyword">return</span> <span class="number">1.0</span>;</div><div class="line">	<span class="keyword">if</span> (N &lt; <span class="number">0</span> || k &lt; <span class="number">0</span>) <span class="keyword">return</span> <span class="number">0.0</span>;</div><div class="line">	<span class="keyword">return</span> (<span class="number">1.0</span> - p) * binomial(N - <span class="number">1</span>, k ,p) + p * binomial(N - <span class="number">1</span>, k - <span class="number">1</span>, p);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>将已经计算过的值保存在数组中并给出一个更好的实现</p>
-<h4 id="一，分析递归调用的次数"><a href="#一，分析递归调用的次数" class="headerlink" title="一，分析递归调用的次数"></a>一，分析递归调用的次数</h4><p>假设 <code>N = 3, k = 2, p = 0.75</code>, 分析函数的执行路径，我们可以得到函数首先不断的进入左侧的 <code>(1.0 - p) * binomial(N - 1, k ,p)</code> 表达式中, <code>k</code> 不变而 <code>N</code> 一直递减, 直到 <code>if (N &lt; 0 || k &lt; 0) return 0.0</code> 返回 0.0 为止，才开始返回上一层函数，而在逐层返回的过程中，函数也在不断的进入右侧表达式 <code>p * binomial(N - 1, k - 1, p)</code>, 将上述执行路径化成图像如下:</p>
-<p><img src="http://oy5xsz86v.bkt.clouddn.com/1.jpg" alt=""></p>
-<p>所以 <code>N = 3, k = 2, p = 0.75</code> 时，该函数总共调用次数为 <code>23</code> 次，观察发现，这是一棵由一分裂二的树状结构，假如每个节点都完整分裂两次，可以得出这棵树结构高度和总节点的函数关系 <code>NodeCount(depth) = 2^(depth + 1) - 1</code>，举例来说，高度为<code>2</code>，那么总共是7个节点，如下图所示:</p>
-<p><img src="http://oy5xsz86v.bkt.clouddn.com/2.jpg" alt=""></p>
-<p>因此我们可以得到递归调用次数的上限是 <code>2^(N + 2) - 1</code>，用代码验证结论：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">double</span> p = <span class="number">0.8</span>;</div><div class="line"><span class="keyword">for</span>(<span class="keyword">int</span> N = <span class="number">1</span>; N &lt; <span class="number">10</span>; N++)</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> k = <span class="number">0</span>; k &lt;= N; k++) &#123;</div><div class="line">		binomial(N, k, p);</div><div class="line">		StdOut.println(<span class="string">"N = "</span> + N + <span class="string">"  k = "</span> + k);</div><div class="line">		StdOut.println(<span class="string">"递归调用次数: "</span> + recursive_count);</div><div class="line">		StdOut.println(<span class="string">"上限次数 : "</span> + (<span class="keyword">long</span>)(Math.pow(<span class="number">2</span>, N + <span class="number">2</span>) - <span class="number">1</span>));</div><div class="line">		StdOut.println(<span class="string">"========================\n"</span>);</div><div class="line">		recursive_count = <span class="number">0</span>;</div><div class="line">	&#125;</div></pre></td></tr></table></figure>
-<p>控制台输出:</p>
-<pre><code>N = 1  k = 0
-递归调用次数: 3
-上限次数 : 7
-========================
-
-N = 1  k = 1
-递归调用次数: 5
-上限次数 : 7
-========================
-
-...
-
-N = 7  k = 6
-递归调用次数: 495
-上限次数 : 511
-========================
-
-N = 7  k = 7
-递归调用次数: 509
-上限次数 : 511
-========================
-
-...
-
-N = 9  k = 7
-递归调用次数: 1953
-上限次数 : 2047
-========================
-
-N = 9  k = 8
-递归调用次数: 2027
-上限次数 : 2047
-========================
-
-N = 9  k = 9
-递归调用次数: 2045
-上限次数 : 2047
-========================
-</code></pre><p>据此估算出 <code>binomial(100, 50, 0.25)</code> 的递归调用次数上限为 <code>2^102 - 1</code></p>
-<h4 id="二，更好的实现"><a href="#二，更好的实现" class="headerlink" title="二，更好的实现"></a>二，更好的实现</h4><p>每传入一个新的 <code>N</code>，都要回过头把已经算过数遍的 <code>binomal(N - 1 ... )</code> 重新再算一遍，从上述图中可看出，<code>binomial(-1, 1...)</code> 和 <code>binomial(-1, 0...)</code> 重复计算了 <code>4</code> 次，<code>binomial(0, 1...)</code> 和 <code>binomial(0, 0...)</code> 重复计算了 <code>3</code> 次，递归调用造成大量计算的浪费，我们考虑使用一个数组，来存储已经计算过的值，当使用需要先前结果的计算时，可以直接从数组中取用。那么，使用数组存储结果，亦步亦趋的计算需要解决这么两个问题:</p>
-<h5 id="1，为数组分配多大容量"><a href="#1，为数组分配多大容量" class="headerlink" title="1，为数组分配多大容量 ?"></a>1，为数组分配多大容量 ?</h5><p> 对于 <code>(N, k)</code> 左侧递归会在 <code>N = 0</code> 时终止（忽略最后一步 <code>N = -1</code> ），而右侧递归会在 <code>k = 0</code> 时达到最右树枝的极限长度，所以我们可以考虑分配 <code>double[N + 1][k + 1]</code> 的数组容量。</p>
-<h5 id="2，初始值如何设置"><a href="#2，初始值如何设置" class="headerlink" title="2，初始值如何设置"></a>2，初始值如何设置</h5><p>在上述图中可以观察到，凡是 <code>(N, k)</code> 为 <code>(N, 0)</code> 形式的调用，总会在左侧递归中随着 <code>N</code> 递减，达到 <code>(0, 0)</code> 时函数第一次返回，在返回后过程中每次都陷入右侧递归，因为右侧递归需要 <code>k</code> 递减，而递归终止条件规定 <code>if (N &lt; 0 || k &lt; 0) return 0.0</code> 所以随着左侧递归每次返回而调用的第一次右侧递归，会因为 <code>k &lt; 0</code> 而立即返回，不会再有第二个以及往后的递归，并且返回的结果为 <code>0.0</code>,<br>然而加一个0，其实等于啥都没干，所以我们忽略右侧递归，而把 <code>(N, 0)</code> 形式简单看作只在右侧递归深入并逐层返回的过程，再进一步，忽略最后一步递归终止条件，即 <code>N = -1</code>, 得出 <code>(N, 0)</code> 执行深度为 <code>N + 1</code>。再来考察 <code>(N, k)</code> 为 <code>(0, k)</code> 形式的调用,因为无论是右侧递归还是左侧递归，在下一次递归中都会因为 <code>N &lt; 0</code> 而终止，所以凡是 <code>(0, k)</code> 的结果都为 <code>0</code>。</p>
-<p>综上所属得出代码:<br><a href="https://github.com/YangXiaoHei/Algorithms4/blob/master/src/第一章_基础编程模型/Practise_1_1_27.java" target="_blank" rel="external">Github: Algorithms4_1.1.27</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -643,10 +454,11 @@ N = 9  k = 9
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -654,6 +466,10 @@ N = 9  k = 9
 
 
           
+
+  
+
+
 
         </div>
         
@@ -674,8 +490,17 @@ N = 9  k = 9
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -743,6 +568,22 @@ N = 9  k = 9
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#牛顿迭代法执行步骤"><span class="nav-number">1.</span> <span class="nav-text">牛顿迭代法执行步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#牛顿迭代法递推式"><span class="nav-number">2.</span> <span class="nav-text">牛顿迭代法递推式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重新解释-Java-代码"><span class="nav-number">3.</span> <span class="nav-text">重新解释 Java 代码</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -870,6 +711,10 @@ N = 9  k = 9
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
