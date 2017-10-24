@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-10-24T07:14:59.000Z</updated>
+  <updated>2017-10-24T17:08:04.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Algorithms4 习题 1_2_18 详解</title>
+    <link href="http://yoursite.com/2017/10/25/Algorithms4-%E4%B9%A0%E9%A2%98-1-2-18-%E8%AF%A6%E8%A7%A3/"/>
+    <id>http://yoursite.com/2017/10/25/Algorithms4-习题-1-2-18-详解/</id>
+    <published>2017-10-24T16:51:55.000Z</published>
+    <updated>2017-10-24T17:08:04.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><code>累加器的方差</code> 以下代码为 <code>Accumulator</code> 类添加 <code>var()</code> 和 <code>stddev()</code> 方法，它们计算了 <code>addDataValue()</code> 方法的参数的方差和标准差，验证这段代码。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Accumulator</span> </span>&#123;</div><div class="line"><span class="keyword">private</span> <span class="keyword">double</span> m;</div><div class="line"><span class="keyword">private</span> <span class="keyword">double</span> s;</div><div class="line"><span class="keyword">private</span> <span class="keyword">int</span> N;</div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addDataValue</span><span class="params">(<span class="keyword">double</span> x)</span> </span>&#123;</div><div class="line">N++;</div><div class="line">s = s + <span class="number">1.0</span> * (N - <span class="number">1</span>) / N * (x - m) * (x - m);</div><div class="line">m = m + (x - m) / N;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">mean</span><span class="params">()</span> </span>&#123;</div><div class="line"><span class="keyword">return</span> m;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">var</span><span class="params">()</span> </span>&#123;</div><div class="line"><span class="keyword">return</span> s / (N - <span class="number">1</span>);</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">stddev</span><span class="params">()</span> </span>&#123;</div><div class="line"><span class="keyword">return</span> Math.sqrt(<span class="keyword">this</span>.var());</div><div class="line">&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure><p>与直接对所有数据的平方求和的方法相比较，这种实现能更好地避免四舍五入产生的误差。</p><p>这段代码主要需要理解以下两句</p><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">s = s + <span class="number">1.0</span> * (N - <span class="number">1</span>) / N * (x - m) * (x - m);</div><div class="line">m = m + (x - m) / N;</div></pre></td></tr></table></figure><p>可以知道，<code>s</code> 代表方差，<code>m</code> 代表均值，下面通过推导均值和方差的递推式，验证这两句代码在数学上的正确性</p><h3 id="均值递推式推导"><a href="#均值递推式推导" class="headerlink" title="均值递推式推导"></a>均值递推式推导</h3><p><img src="http://oy5xsz86v.bkt.clouddn.com/%E5%9D%87%E5%80%BC%E6%8E%A8%E5%AF%BC.jpg" alt=""></p><h3 id="方差递推式推导"><a href="#方差递推式推导" class="headerlink" title="方差递推式推导"></a>方差递推式推导</h3><p><img src="http://oy5xsz86v.bkt.clouddn.com/%E6%96%B9%E5%B7%AE%E6%8E%A8%E5%AF%BC1.jpg" alt=""><br><img src="http://oy5xsz86v.bkt.clouddn.com/%E6%96%B9%E5%B7%AE%E6%8E%A8%E5%AF%BC2.jpg" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;code&gt;累加器的方差&lt;/code&gt; 以下代码为 &lt;code&gt;Accumulator&lt;/code&gt; 类添加 &lt;code&gt;var()&lt;/code&gt; 和 &lt;code&gt;stddev()&lt;/code&gt; 方法，它们计算了 &lt;code&gt;addDataValue()&lt;/code&gt; 方法
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Algorithms4 习题 1_1_7 详解-牛顿迭代法</title>

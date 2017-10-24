@@ -131,24 +131,21 @@
 
 
 
-<meta name="description" content="描述 : 下面代码输出什么 ? 123456public static double practise_1_1_07_a(double c) &amp;#123;	double result = c;	while(Math.abs(result - c / result) &amp;gt; .0001) 		result = (c / result + result) / 2.0;	return result;&amp;">
+<meta name="description" content="累加器的方差 以下代码为 Accumulator 类添加 var() 和 stddev() 方法，它们计算了 addDataValue() 方法的参数的方差和标准差，验证这段代码。 12345678910111213141516171819class Accumulator &amp;#123;	private double m;	private double s;	private int N;	publ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Algorithms4 习题 1_1_7 详解-牛顿迭代法">
-<meta property="og:url" content="http://yoursite.com/2017/10/24/Algorithms4-习题-1-1-7-详解-牛顿迭代法/index.html">
+<meta property="og:title" content="Algorithms4 习题 1_2_18 详解">
+<meta property="og:url" content="http://yoursite.com/2017/10/25/Algorithms4-习题-1-2-18-详解/index.html">
 <meta property="og:site_name" content="杨小嘿嘿嘿">
-<meta property="og:description" content="描述 : 下面代码输出什么 ? 123456public static double practise_1_1_07_a(double c) &amp;#123;	double result = c;	while(Math.abs(result - c / result) &amp;gt; .0001) 		result = (c / result + result) / 2.0;	return result;&amp;">
+<meta property="og:description" content="累加器的方差 以下代码为 Accumulator 类添加 var() 和 stddev() 方法，它们计算了 addDataValue() 方法的参数的方差和标准差，验证这段代码。 12345678910111213141516171819class Accumulator &amp;#123;	private double m;	private double s;	private int N;	publ">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://oy5xsz86v.bkt.clouddn.com/%E7%89%9B%E9%A1%BF%E8%BF%AD%E4%BB%A3%E6%B3%95.gif">
-<meta property="og:image" content="http://oy5xsz86v.bkt.clouddn.com/%E7%89%9B%E9%A1%BF%E8%BF%AD%E4%BB%A3%E9%80%92%E6%8E%A8%E5%BC%8F.png">
-<meta property="og:image" content="http://oy5xsz86v.bkt.clouddn.com/%E5%B9%B3%E6%96%B9%E6%A0%B9%E8%BF%AD%E4%BB%A3%E9%80%92%E6%8E%A8%E5%BC%8F.png">
-<meta property="og:image" content="http://oy5xsz86v.bkt.clouddn.com/2%E5%BC%80%E6%A0%B9.png">
-<meta property="og:image" content="http://oy5xsz86v.bkt.clouddn.com/whilefinalcondition.png">
-<meta property="og:image" content="http://oy5xsz86v.bkt.clouddn.com/%E6%95%B4%E7%90%86%E5%BE%AA%E7%8E%AF%E7%BB%88%E6%AD%A2%E6%9D%A1%E4%BB%B6.png">
-<meta property="og:updated_time" content="2017-10-24T07:14:59.000Z">
+<meta property="og:image" content="http://oy5xsz86v.bkt.clouddn.com/%E5%9D%87%E5%80%BC%E6%8E%A8%E5%AF%BC.jpg">
+<meta property="og:image" content="http://oy5xsz86v.bkt.clouddn.com/%E6%96%B9%E5%B7%AE%E6%8E%A8%E5%AF%BC1.jpg">
+<meta property="og:image" content="http://oy5xsz86v.bkt.clouddn.com/%E6%96%B9%E5%B7%AE%E6%8E%A8%E5%AF%BC2.jpg">
+<meta property="og:updated_time" content="2017-10-24T17:08:04.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Algorithms4 习题 1_1_7 详解-牛顿迭代法">
-<meta name="twitter:description" content="描述 : 下面代码输出什么 ? 123456public static double practise_1_1_07_a(double c) &amp;#123;	double result = c;	while(Math.abs(result - c / result) &amp;gt; .0001) 		result = (c / result + result) / 2.0;	return result;&amp;">
-<meta name="twitter:image" content="http://oy5xsz86v.bkt.clouddn.com/%E7%89%9B%E9%A1%BF%E8%BF%AD%E4%BB%A3%E6%B3%95.gif">
+<meta name="twitter:title" content="Algorithms4 习题 1_2_18 详解">
+<meta name="twitter:description" content="累加器的方差 以下代码为 Accumulator 类添加 var() 和 stddev() 方法，它们计算了 addDataValue() 方法的参数的方差和标准差，验证这段代码。 12345678910111213141516171819class Accumulator &amp;#123;	private double m;	private double s;	private int N;	publ">
+<meta name="twitter:image" content="http://oy5xsz86v.bkt.clouddn.com/%E5%9D%87%E5%80%BC%E6%8E%A8%E5%AF%BC.jpg">
 
 
 
@@ -178,13 +175,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/10/24/Algorithms4-习题-1-1-7-详解-牛顿迭代法/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/10/25/Algorithms4-习题-1-2-18-详解/"/>
 
 
 
 
 
-  <title>Algorithms4 习题 1_1_7 详解-牛顿迭代法 | 杨小嘿嘿嘿</title>
+  <title>Algorithms4 习题 1_2_18 详解 | 杨小嘿嘿嘿</title>
   
 
 
@@ -311,7 +308,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/24/Algorithms4-习题-1-1-7-详解-牛顿迭代法/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/25/Algorithms4-习题-1-2-18-详解/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="杨小嘿">
@@ -328,7 +325,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Algorithms4 习题 1_1_7 详解-牛顿迭代法</h1>
+          <h1 class="post-title" itemprop="name headline">Algorithms4 习题 1_2_18 详解</h1>
         
 
         <div class="post-meta">
@@ -340,8 +337,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-24T13:39:52+08:00">
-                2017-10-24
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-25T00:51:55+08:00">
+                2017-10-25
               </time>
             
 
@@ -356,34 +353,12 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-10-24T15:14:59+08:00">
-                2017-10-24
+              <time title="更新于" itemprop="dateModified" datetime="2017-10-25T01:08:04+08:00">
+                2017-10-25
               </time>
             
           </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Algorithms4/" itemprop="url" rel="index">
-                    <span itemprop="name">Algorithms4</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -412,25 +387,14 @@
       
 
       
-        <p><code>描述</code> : 下面代码输出什么 ?</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">double</span> <span class="title">practise_1_1_07_a</span><span class="params">(<span class="keyword">double</span> c)</span> </span>&#123;</div><div class="line">	<span class="keyword">double</span> result = c;</div><div class="line">	<span class="keyword">while</span>(Math.abs(result - c / result) &gt; .<span class="number">0001</span>) </div><div class="line">		result = (c / result + result) / <span class="number">2.0</span>;</div><div class="line">	<span class="keyword">return</span> result;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>上面的代码输出 <code>c</code> 的平方根，原理是牛顿迭代法，下面详述：</p>
-<h2 id="牛顿迭代法执行步骤"><a href="#牛顿迭代法执行步骤" class="headerlink" title="牛顿迭代法执行步骤"></a>牛顿迭代法执行步骤</h2><p>牛顿迭代法是一种通过逐渐逼近求函数解的方法，如下动图所示<br><img src="http://oy5xsz86v.bkt.clouddn.com/%E7%89%9B%E9%A1%BF%E8%BF%AD%E4%BB%A3%E6%B3%95.gif" alt=""></p>
-<p><strong>步骤1.</strong>  在函数曲线上任取一点<code>(t, f(t))</code>，做该点切线，与 <code>x</code> 轴有一交点 <code>x0</code></p>
-<p><strong>步骤2.</strong> 过 x0 做垂线，与函数曲线交于点 <code>(x0, f(x0))</code></p>
-<p><strong>步骤3.</strong> 做 <code>(x0, f(x0))</code> 做函数曲线的切线，与 <code>x</code> 轴有一交点 <code>x1</code></p>
-<p><strong>步骤4.</strong> 回到<strong>步骤 2</strong></p>
-<h2 id="牛顿迭代法递推式"><a href="#牛顿迭代法递推式" class="headerlink" title="牛顿迭代法递推式"></a>牛顿迭代法递推式</h2><p>可以发现，每次做切线与 <code>x</code> 轴交点在逼近 <code>f(x) = 0</code> 的解，据此我们可以得到下列递推式<br><img src="http://oy5xsz86v.bkt.clouddn.com/%E7%89%9B%E9%A1%BF%E8%BF%AD%E4%BB%A3%E9%80%92%E6%8E%A8%E5%BC%8F.png" alt=""></p>
-<p>而求 <code>a</code> 的<code>2</code>次方根，即求使 <code>x^2 - a</code> 为<code>0</code>的解，此时<code>f(x) = x^2 - a</code>，带入牛顿迭代递推式得到平方根迭代递推式<br><img src="http://oy5xsz86v.bkt.clouddn.com/%E5%B9%B3%E6%96%B9%E6%A0%B9%E8%BF%AD%E4%BB%A3%E9%80%92%E6%8E%A8%E5%BC%8F.png" alt=""></p>
-<p>举例来说，比如求 <code>2</code> 的<code>2</code>次方根，随意选取一个初始值 <code>x0 = 1</code><br><img src="http://oy5xsz86v.bkt.clouddn.com/2%E5%BC%80%E6%A0%B9.png" alt=""></p>
-<h2 id="重新解释-Java-代码"><a href="#重新解释-Java-代码" class="headerlink" title="重新解释 Java 代码"></a>重新解释 <code>Java</code> 代码</h2><p>我们可以随意选取 <code>x0</code> 的值，在上述 <code>Java</code> 程序中，选取 <code>x0 = a</code>，依然可以得到正确的结果。<br>我们知道，随着 <code>f(xn)/f&#39;(xn) -&gt; 0</code>时，<code>x(n+1) -&gt; x(n)</code>，所以我们使用的循环的终止条件其实是</p>
-<p><img src="http://oy5xsz86v.bkt.clouddn.com/whilefinalcondition.png" alt=""></p>
-<p>整理后得到</p>
-<p><img src="http://oy5xsz86v.bkt.clouddn.com/%E6%95%B4%E7%90%86%E5%BE%AA%E7%8E%AF%E7%BB%88%E6%AD%A2%E6%9D%A1%E4%BB%B6.png" alt=""></p>
-<blockquote>
-<p>添加注释版代码</p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">double</span> <span class="title">practise_1_1_07_a</span><span class="params">(<span class="keyword">double</span> c)</span> </span>&#123;</div><div class="line">	<span class="comment">/**</span></div><div class="line"><span class="comment">	 * 选取 x0 = c</span></div><div class="line"><span class="comment">	 */</span></div><div class="line">	<span class="keyword">double</span> result = c;</div><div class="line">	<span class="comment">/**</span></div><div class="line"><span class="comment">	 * 终止条件为 (x(n) - a/x(n)) -&gt; 0</span></div><div class="line"><span class="comment">	 */</span></div><div class="line">	<span class="keyword">while</span>(Math.abs(result - c / result) &gt; .<span class="number">0001</span>) </div><div class="line">		<span class="comment">// 迭代 x(n+1) = 1/2 * (x(n) - a/x(n))</span></div><div class="line">		result = (c / result + result) / <span class="number">2.0</span>;</div><div class="line">	<span class="keyword">return</span> result;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+        <p><code>累加器的方差</code> 以下代码为 <code>Accumulator</code> 类添加 <code>var()</code> 和 <code>stddev()</code> 方法，它们计算了 <code>addDataValue()</code> 方法的参数的方差和标准差，验证这段代码。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Accumulator</span> </span>&#123;</div><div class="line">	<span class="keyword">private</span> <span class="keyword">double</span> m;</div><div class="line">	<span class="keyword">private</span> <span class="keyword">double</span> s;</div><div class="line">	<span class="keyword">private</span> <span class="keyword">int</span> N;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addDataValue</span><span class="params">(<span class="keyword">double</span> x)</span> </span>&#123;</div><div class="line">		N++;</div><div class="line">		s = s + <span class="number">1.0</span> * (N - <span class="number">1</span>) / N * (x - m) * (x - m);</div><div class="line">		m = m + (x - m) / N;</div><div class="line">	&#125;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">mean</span><span class="params">()</span> </span>&#123;</div><div class="line">		<span class="keyword">return</span> m;</div><div class="line">	&#125;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">var</span><span class="params">()</span> </span>&#123;</div><div class="line">		<span class="keyword">return</span> s / (N - <span class="number">1</span>);</div><div class="line">	&#125;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">stddev</span><span class="params">()</span> </span>&#123;</div><div class="line">		<span class="keyword">return</span> Math.sqrt(<span class="keyword">this</span>.var());</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>与直接对所有数据的平方求和的方法相比较，这种实现能更好地避免四舍五入产生的误差。</p>
+<p>这段代码主要需要理解以下两句</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">s = s + <span class="number">1.0</span> * (N - <span class="number">1</span>) / N * (x - m) * (x - m);</div><div class="line">m = m + (x - m) / N;</div></pre></td></tr></table></figure>
+<p>可以知道，<code>s</code> 代表方差，<code>m</code> 代表均值，下面通过推导均值和方差的递推式，验证这两句代码在数学上的正确性</p>
+<h3 id="均值递推式推导"><a href="#均值递推式推导" class="headerlink" title="均值递推式推导"></a>均值递推式推导</h3><p><img src="http://oy5xsz86v.bkt.clouddn.com/%E5%9D%87%E5%80%BC%E6%8E%A8%E5%AF%BC.jpg" alt=""></p>
+<h3 id="方差递推式推导"><a href="#方差递推式推导" class="headerlink" title="方差递推式推导"></a>方差递推式推导</h3><p><img src="http://oy5xsz86v.bkt.clouddn.com/%E6%96%B9%E5%B7%AE%E6%8E%A8%E5%AF%BC1.jpg" alt=""><br><img src="http://oy5xsz86v.bkt.clouddn.com/%E6%96%B9%E5%B7%AE%E6%8E%A8%E5%AF%BC2.jpg" alt=""></p>
 
       
     </div>
@@ -455,8 +419,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/10/21/Algorithms4-习题-1-1-27-详解/" rel="next" title="Algorithms4 习题 1_1_27 详解">
-                <i class="fa fa-chevron-left"></i> Algorithms4 习题 1_1_27 详解
+              <a href="/2017/10/24/Algorithms4-习题-1-1-7-详解-牛顿迭代法/" rel="next" title="Algorithms4 习题 1_1_7 详解-牛顿迭代法">
+                <i class="fa fa-chevron-left"></i> Algorithms4 习题 1_1_7 详解-牛顿迭代法
               </a>
             
           </div>
@@ -464,10 +428,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/10/25/Algorithms4-习题-1-2-18-详解/" rel="prev" title="Algorithms4 习题 1_2_18 详解">
-                Algorithms4 习题 1_2_18 详解 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -607,7 +567,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#牛顿迭代法执行步骤"><span class="nav-number">1.</span> <span class="nav-text">牛顿迭代法执行步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#牛顿迭代法递推式"><span class="nav-number">2.</span> <span class="nav-text">牛顿迭代法递推式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重新解释-Java-代码"><span class="nav-number">3.</span> <span class="nav-text">重新解释 Java 代码</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#均值递推式推导"><span class="nav-number">1.</span> <span class="nav-text">均值递推式推导</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方差递推式推导"><span class="nav-number">2.</span> <span class="nav-text">方差递推式推导</span></a></li></ol></div>
             
 
           </div>
