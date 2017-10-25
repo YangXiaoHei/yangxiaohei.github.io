@@ -141,7 +141,8 @@
 <meta property="og:image" content="http://oy5xsz86v.bkt.clouddn.com/%E5%9D%87%E5%80%BC%E6%8E%A8%E5%AF%BC.jpg">
 <meta property="og:image" content="http://oy5xsz86v.bkt.clouddn.com/%E6%96%B9%E5%B7%AE%E6%8E%A8%E5%AF%BC1.jpg">
 <meta property="og:image" content="http://oy5xsz86v.bkt.clouddn.com/%E6%96%B9%E5%B7%AE%E6%8E%A8%E5%AF%BC2.jpg">
-<meta property="og:updated_time" content="2017-10-24T17:21:15.000Z">
+<meta property="og:image" content="http://oy5xsz86v.bkt.clouddn.com/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%99%A4%E4%BB%A5n-1.jpg">
+<meta property="og:updated_time" content="2017-10-25T07:15:21.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Algorithms4 习题 1_2_18 均值方差递推式">
 <meta name="twitter:description" content="累加器的方差 以下代码为 Accumulator 类添加 var() 和 stddev() 方法，它们计算了 addDataValue() 方法的参数的方差和标准差，验证这段代码。 12345678910111213141516171819class Accumulator &amp;#123;	private double m;	private double s;	private int N;	publ">
@@ -353,7 +354,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-10-25T01:21:15+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2017-10-25T15:15:21+08:00">
                 2017-10-25
               </time>
             
@@ -412,11 +413,19 @@
         <p><code>累加器的方差</code> 以下代码为 <code>Accumulator</code> 类添加 <code>var()</code> 和 <code>stddev()</code> 方法，它们计算了 <code>addDataValue()</code> 方法的参数的方差和标准差，验证这段代码。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Accumulator</span> </span>&#123;</div><div class="line">	<span class="keyword">private</span> <span class="keyword">double</span> m;</div><div class="line">	<span class="keyword">private</span> <span class="keyword">double</span> s;</div><div class="line">	<span class="keyword">private</span> <span class="keyword">int</span> N;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addDataValue</span><span class="params">(<span class="keyword">double</span> x)</span> </span>&#123;</div><div class="line">		N++;</div><div class="line">		s = s + <span class="number">1.0</span> * (N - <span class="number">1</span>) / N * (x - m) * (x - m);</div><div class="line">		m = m + (x - m) / N;</div><div class="line">	&#125;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">mean</span><span class="params">()</span> </span>&#123;</div><div class="line">		<span class="keyword">return</span> m;</div><div class="line">	&#125;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">var</span><span class="params">()</span> </span>&#123;</div><div class="line">		<span class="keyword">return</span> s / (N - <span class="number">1</span>);</div><div class="line">	&#125;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">stddev</span><span class="params">()</span> </span>&#123;</div><div class="line">		<span class="keyword">return</span> Math.sqrt(<span class="keyword">this</span>.var());</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>与直接对所有数据的平方求和的方法相比较，这种实现能更好地避免四舍五入产生的误差。</p>
-<p>这段代码主要需要理解以下两句</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">s = s + <span class="number">1.0</span> * (N - <span class="number">1</span>) / N * (x - m) * (x - m);</div><div class="line">m = m + (x - m) / N;</div></pre></td></tr></table></figure>
-<p>可以知道，<code>s</code> 代表方差，<code>m</code> 代表均值，下面通过推导均值和方差的递推式，验证这两句代码在数学上的正确性</p>
+<p>主要理解以下三句代码</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">s = s + <span class="number">1.0</span> * (N - <span class="number">1</span>) / N * (x - m) * (x - m);</div><div class="line">m = m + (x - m) / N;</div><div class="line"><span class="keyword">return</span> s / (N - <span class="number">1</span>);</div></pre></td></tr></table></figure>
+<p>其中 <code>s / (N - 1)</code> 代表方差，<code>m</code> 代表均值，下面通过推导均值和方差的递推式，验证代码在数学上的正确性</p>
 <h3 id="均值递推式推导"><a href="#均值递推式推导" class="headerlink" title="均值递推式推导"></a>均值递推式推导</h3><p><img src="http://oy5xsz86v.bkt.clouddn.com/%E5%9D%87%E5%80%BC%E6%8E%A8%E5%AF%BC.jpg" alt=""></p>
 <h3 id="方差递推式推导"><a href="#方差递推式推导" class="headerlink" title="方差递推式推导"></a>方差递推式推导</h3><p><img src="http://oy5xsz86v.bkt.clouddn.com/%E6%96%B9%E5%B7%AE%E6%8E%A8%E5%AF%BC1.jpg" alt=""><br><img src="http://oy5xsz86v.bkt.clouddn.com/%E6%96%B9%E5%B7%AE%E6%8E%A8%E5%AF%BC2.jpg" alt=""></p>
+<h3 id="除以-n-1-而不除以-n"><a href="#除以-n-1-而不除以-n" class="headerlink" title="除以 n-1 而不除以 n"></a>除以 n-1 而不除以 n</h3><p>回想方差计算公式，或许会对方差是 <code>s / (N - 1)</code> 这个结果感到奇怪，因为被人熟悉的方差计算公式分母是元素的总个数，而不是 <code>n-1</code>，下面开始推导分母为 <code>n-1</code> 的正确性<br><img src="http://oy5xsz86v.bkt.clouddn.com/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%99%A4%E4%BB%A5n-1.jpg" alt=""></p>
+<h3 id="代码验证"><a href="#代码验证" class="headerlink" title="代码验证"></a>代码验证</h3><blockquote>
+<p>直接套用公式</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">方差 <span class="number">802.2090999999999</span></div><div class="line">标准差 <span class="number">28.32329606525342</span></div><div class="line">平均值 <span class="number">52.97</span></div></pre></td></tr></table></figure>
+<p>使用递推式</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">方差 <span class="number">810.3122222222221</span></div><div class="line">标准差 <span class="number">28.465983598362136</span></div><div class="line">平均值 <span class="number">52.97</span></div></pre></td></tr></table></figure>
+</blockquote>
+<p>观察发现，使用递推式时，方差和标准差虽然和使用标准公式的结果彼此接近，但却略大于标准公式的结果，当然，这也和我们的推导结果一致，因为在渐进意义下，刻意忽略了趋紧于 <code>0</code> 的项。</p>
 
       
     </div>
@@ -589,7 +598,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#均值递推式推导"><span class="nav-number">1.</span> <span class="nav-text">均值递推式推导</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方差递推式推导"><span class="nav-number">2.</span> <span class="nav-text">方差递推式推导</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#均值递推式推导"><span class="nav-number">1.</span> <span class="nav-text">均值递推式推导</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方差递推式推导"><span class="nav-number">2.</span> <span class="nav-text">方差递推式推导</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#除以-n-1-而不除以-n"><span class="nav-number">3.</span> <span class="nav-text">除以 n-1 而不除以 n</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码验证"><span class="nav-number">4.</span> <span class="nav-text">代码验证</span></a></li></ol></div>
             
 
           </div>
